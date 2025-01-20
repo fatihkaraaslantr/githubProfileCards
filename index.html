@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- *Form - input -->
+    <form id="form" class="user-form">
+      <input
+        type="text"
+        id="search"
+        placeholder="github kullanıcısı"
+        autocomplete="off"
+      />
+      <button type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+    <!-- *Card -->
+    <main id="main">
+      <div class="card">
+        <img
+          class="user-image"
+          src="https://avatars.githubusercontent.com/u/136270637?s=400&u=2eace110fe38a6ccf4e7f7f417121df4cf0079b3&v=4"
+          alt="user Image"
+        />
+        <!-- info -->
+        <div class="user-info">
+          <div class="user-name">
+            <h2>M.Fatih Karaaslan</h2>
+            <small>@m.fatih karaaslan</small>
+          </div>
+        </div>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum velit
+          suscipit eum unde at inventore atque alias amet aut maiores.
+          Repellendus laboriosam voluptate deserunt consectetur soluta eum odio
+          dolore officia!
+        </p>
+        <ul>
+          <li>
+            311 <i class="fa-solid fa-user-group"></i><strong>Followers</strong>
+          </li>
+          <li>2 <strong>Following</strong></li>
+          <li>
+            13 <i class="fa-solid fa-bookmark"></i><strong>Respository</strong>
+          </li>
+        </ul>
+        <!-- ---- -->
+        <div class="repos" id="repos">
+          <a href="#"><i class="fa-solid fa-book-bookmark"> </i>repo1</a>
+          <a href="#"><i class="fa-solid fa-book-bookmark"> </i>repo2</a>
+          <a href="#"><i class="fa-solid fa-book-bookmark"> </i>repo3</a>
+        </div>
+      </div>
+    </main>
+
+    <!--Script Axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- js bağlantı -->
+    <script src="./app.js"></script>
+  </body>
+</html>
